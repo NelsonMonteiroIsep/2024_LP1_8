@@ -38,27 +38,33 @@
             </p>
             <div class="markets">
                 <div class="market">
-                    <a href="#" class="link" onclick="load_amazon()">Amazon</a>
+                    <a href="#" onclick="load_amazon()">Amazon</a>
                     <p>A companhia nasceu como uma loja digital de livros, mas ampliou suas atividades e se tornou a maior empresa de comércio eletrônico do mundo. Atualmente a Amazon comercializa produtos de todos os tipos, incluindo brinquedos, eletrônicos, vestuários e acessórios.</p>
                 </div>
                 <div class="market">
-                    <h3 onclick="load_aliexpress()">AliExpress</h3>
+                    <a href="#" onclick="load_amazon()">Ali Express</a>
                     <p>O AliExpress começou como um negócio de empresa para empresa de compra e venda de portal. Desde então tem expandido para o varejo, consumer-to-consumer, computação em nuvem e serviços de pagamento. O AliExpress é disponível atualmente nos idiomas inglês, espanhol, holandês, francês, polaco, português e russo.</p>
                 </div>
                 <div class="market">
-                    <h3 onclick="load_worten()">Worten</h3>
+                    <a href="#" onclick="load_amazon()">Worten</a>
                     <p>
                         Worten é uma empresa portuguesa de venda a retalho de produtos eletrónicos, de consumo e de entretenimento, pertencente ao grupo Sonae, com sede em Carnaxide.</p>
                 </div>
             </div>
-            <div class="markets" id="amazon" style="background-color: red;">
+            <div class="markets" id="dropdown" style="background-color: red;">
                 
             </div>
         </div>
     </section>
     <script>
         function load_amazon() {
-            document.getElementById("amazon").innerHTML='<object width="100%" style="height:500px;" type="text/html" data="amazon.html"></object>';
+            document.getElementById("dropdown").innerHTML='<object width="100%" style="height:500px;" type="text/html" data="amazon.html"></object>';
+        }
+        function load_worten() {
+            document.getElementById("dropdown").innerHTML='<object width="100%" style="height:500px;" type="text/html" data="worten.html"></object>';
+        }
+        function load_aliexpress() {
+            document.getElementById("dropdown").innerHTML='<object width="100%" style="height:500px;" type="text/html" data="AliExpress.html"></object>';
         }
     </script>
 </body>
