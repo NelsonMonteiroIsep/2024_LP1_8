@@ -92,6 +92,7 @@ body {
 .about {
     padding: 50px 20px;
     text-align: center;
+    
 }
 
 .about h2 {
@@ -147,6 +148,12 @@ table {
   
   th {
     font-weight: bold;
+  }
+
+  .marketImg{
+    width: 80px;
+    height: auto;
+    border-radius: 15px;
   }
 
   footer {
