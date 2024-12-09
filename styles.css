@@ -25,13 +25,24 @@ body {
 .header .logo {
     font-size: 24px;
     font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+}
+.menu{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.menu ul {
+.menudir {
+    display: flex; /* Ensure items align in a row */
+    gap: 10px; /* Optional: space between right items */
+}
+
+.menu ul{
     list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    gap: 15px;
+    padding: 0;
+    margin: 0;
 }
 
 .menu a {
@@ -55,6 +66,24 @@ body {
     margin-bottom: 20px;
     color: #555;
 }
+
+.marketplace-image {
+    display: block;
+    margin: 10px auto;
+    max-width: 200px;
+    border-radius:5%;
+
+  
+  }
+
+  #bannerimage {
+  width: 100%;
+  background-image:url("C:/Users/35191/Desktop/LP1/aliexpress-banner.png");
+  height:100px;
+  background-position:center;
+}
+
+.container p {text-align: justify;}
 
 .btn {
     padding: 10px 20px;
@@ -91,3 +120,33 @@ body {
     margin-bottom: 10px;
     color: #1abc9c;
 }
+
+table {
+    width: 30%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+  }
+  
+  thead {
+    background-color: #2a362a;
+    color: #fff;
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+  
+  th {
+    font-weight: bold;
+  }
