@@ -34,23 +34,34 @@
             </p>
             <div class="markets">
                 <div class="market">
-                    <h3>Amazon</h3>
+                    <h3><a href="#" onclick="load_amazon()">Amazon</a></h3>
                     <img class="marketImg" src="amazonMarket.png" alt="AmazonIcon">
                     <p>A companhia nasceu como uma loja digital de livros, mas ampliou suas atividades e se tornou a maior empresa de comércio eletrônico do mundo. Atualmente a Amazon comercializa produtos de todos os tipos, incluindo brinquedos, eletrônicos, vestuários e acessórios.</p>
                 </div>
                 <div class="market">
-                    <h3>AliExpress</h3>
+                    <h3><a href="#" onclick="load_aliexpress()">Ali Express</a></h3>
                     <img class="marketImg" src="aliexpressMarket.png" alt="AliexpressIcon">
                     <p>O AliExpress começou como um negócio de empresa para empresa de compra e venda de portal. Desde então tem expandido para o varejo, consumer-to-consumer, computação em nuvem e serviços de pagamento. O AliExpress é disponível atualmente nos idiomas inglês, espanhol, holandês, francês, polaco, português e russo.</p>
                 </div>
                 <div class="market">
-                    <h3>Worten</h3>
+                    <h3><a href="#" onclick="load_worten()">Worten</a></h3>
                     <img class="marketImg" src="wortenMarket.png" alt="WortenIcon">
                     <p>Worten é uma empresa portuguesa de venda a retalho de produtos eletrónicos, de consumo e de entretenimento, pertencente ao grupo Sonae, com sede em Carnaxide.</p>
                 </div>
             </div>
         </div>
     </section>
+    <script>
+        function load_amazon() {
+            document.getElementById("dropdown").innerHTML='<object width="100%" style="height:500px;" type="text/html" data="amazon.html"></object>';
+        }
+        function load_worten() {
+            document.getElementById("dropdown").innerHTML='<object width="100%" style="height:500px;" type="text/html" data="worten.html"></object>';
+        }
+        function load_aliexpress() {
+            document.getElementById("dropdown").innerHTML='<object width="100%" style="height:500px;" type="text/html" data="AliExpress.html"></object>';
+        }
+    </script>
 </body>
 <footer class="footer">
     <section class="container">
