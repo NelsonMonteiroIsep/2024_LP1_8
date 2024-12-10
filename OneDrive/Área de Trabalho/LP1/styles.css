@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #1abc9c;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.titulo {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f4f4f4;
+}
+
+.titulo h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.titulo p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #1abc9c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.markets {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.market {
+    width: 30%;
+    background: #eaeaea;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.market h3 {
+    margin-bottom: 10px;
+    color: #1abc9c;
+}
+
+.wortenRed{
+    background-color: red;
+}
+section p{
+    padding-top: 10px;
+}
+.tituloWorten{
+    text-align: center;
+    padding: 50px 20px;
+    background: #f4f4f4;
+    color: #555;
+}
+.WortenIndice{
+    float: left;
+    padding: 5px; 
+
+}
+.Wortensubtitulo{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
