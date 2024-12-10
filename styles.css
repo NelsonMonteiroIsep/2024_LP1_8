@@ -134,7 +134,7 @@ table {
   }
   
   thead {
-    background-color: #2a362a;
+    background-color: #1abc9c;
     color: #fff;
   }
   
@@ -172,4 +172,76 @@ table {
 
 #dropdown{
 height: auto;
+}
+
+.about-ali{
+
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.about-image {
+  flex: 0 0 400px;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.about-text {
+flex: 1;
+background: #f9f9f9;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+text-align: left;
+margin-right: 20px;
+}
+
+.about-cont{
+  display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    margin: 20px 0;
+}
+
+.tabela-texto{
+  display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.tabela {
+  flex :2;
+}
+
+.tabela table {
+  width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+}
+
+.texto{
+flex: 1;
+background: #f9f9f9;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+margin-top: 20px;
+}
+
+.texto p{
+  text-align: justify;
 }
