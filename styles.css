@@ -25,6 +25,13 @@ body {
     background: #1abc9c;
     color: #fff;
     padding: 20px 0;
+    /*
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    */
 }
 
 .header .logo {
@@ -79,7 +86,7 @@ body {
 
   #bannerimage {
   width: 100%;
-  background-image:url("C:/Users/35191/Desktop/LP1/aliexpress-banner.png");
+  background-image:url("C:/Users/35191/Desktop/LP1/imagens/aliexpress-banner.png");
   height:100px;
   background-position:center;
 }
@@ -244,4 +251,24 @@ margin-top: 20px;
 
 .texto p{
   text-align: justify;
+}
+
+.pontos {
+  width: 48%;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.container-pontos{
+  display: flex;
+  justify-content: space-between;
+  margin: 25px;
+  margin-top: 25px;
+}
+
+.pontos ul{
+  list-style-type: disc;
+            padding-left: 20px;
 }
