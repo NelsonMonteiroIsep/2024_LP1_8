@@ -29,7 +29,7 @@
     <section class="about">
         <div class="container">
             <h2>Marketplaces</h2>
-            <p>
+            <p id="subtitulo">
                 Marketplace é um tipo de e-commerce que permite aos diversos vendedores oferecerem seus produtos aos consumidores em um único lugar.
             </p>
             <div class="markets">
@@ -49,18 +49,20 @@
                     <p>Worten é uma empresa portuguesa de venda a retalho de produtos eletrónicos, de consumo e de entretenimento, pertencente ao grupo Sonae, com sede em Carnaxide.</p>
                 </div>
             </div>
+            <section id="dropdown"></section>
         </div>
     </section>
     <script>
         function load_amazon() {
-            document.getElementById("dropdown").innerHTML='<object width="100%" style="height:500px;" type="text/html" data="amazon.html"></object>';
+            document.getElementById("dropdown").innerHTML='<object width="100%" style="height:5000px;" type="text/html" data="amazon.html"></object>';
         }
         function load_worten() {
-            document.getElementById("dropdown").innerHTML='<object width="100%" style="height:500px;" type="text/html" data="worten.html"></object>';
+            document.getElementById("dropdown").innerHTML='<object width="100%" style="height:100%;" type="text/html" data="worten.html"></object>';
         }
         function load_aliexpress() {
-            document.getElementById("dropdown").innerHTML='<object width="100%" style="height:500px;" type="text/html" data="AliExpress.html"></object>';
+            document.getElementById("dropdown").innerHTML='<object width="100%" style="overflow:cover;" type="text/html" data="AliExpress.html"></object>';
         }
+
     </script>
 </body>
 <footer class="footer">
