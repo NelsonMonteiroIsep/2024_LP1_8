@@ -272,3 +272,24 @@ margin-top: 20px;
   list-style-type: disc;
             padding-left: 20px;
 }
+.wortenRed{
+  background-color: red;
+}
+section p{
+  padding-top: 10px;
+}
+.tituloWorten{
+  text-align: center;
+  padding: 50px 20px;
+  background: #f4f4f4;
+  color: #555;
+}
+.WortenIndice{
+  float: left;
+  padding: 5px; 
+
+}
+.Wortensubtitulo{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
