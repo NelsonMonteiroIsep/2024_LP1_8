@@ -1,6 +1,5 @@
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -272,24 +271,15 @@ margin-top: 20px;
   list-style-type: disc;
             padding-left: 20px;
 }
-.wortenRed{
-  background-color: red;
-}
 section p{
-  padding-top: 10px;
+  padding-bottom: 20px;
 }
-.tituloWorten{
-  text-align: center;
-  padding: 50px 20px;
-  background: #f4f4f4;
-  color: #555;
+.sublinhado{
+  text-decoration: underline;
+  padding-bottom: 15px;
 }
-.WortenIndice{
-  float: left;
-  padding: 5px; 
+.textoReview{
+style="font-style: italic"
+}
 
-}
-.Wortensubtitulo{
-  margin-top: 10px;
-  margin-bottom: 15px;
-}
+
