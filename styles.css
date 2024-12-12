@@ -9,7 +9,55 @@ body {
     line-height: 1.6;
     color: #333;
 }
-
+main{
+  margin-top: 20px;
+  margin-right: 150px;
+  margin-left: 150px;
+}
+article{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+section{
+  flex-grow: 0.3;
+  text-align: right;
+}
+.tBlock1{
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  width: 45%;
+  min-width: 300px;
+  flex:1;
+  text-align: left;
+}
+.tBlock1 h1{
+  font-size:30px;
+  font-weight:bold;
+  display: flex;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  width:300px;
+}
+.tBlock2{
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  width: 45%;
+  min-width: 300px;
+  flex: 0.6;
+  text-align: left;
+}
+.tableAmazon{
+  flex: 1;
+}
 .container {
     width: 90%;
     max-width: 1200px;
@@ -20,8 +68,7 @@ body {
   text-align: center;
 }
 
-
-.header {
+header {
     background: #1abc9c;
     color: #fff;
     padding: 20px 0;
@@ -34,14 +81,14 @@ body {
     */
 }
 
-.header .logo {
+header .logo {
     font-size: 24px;
     font-weight: bold;
     display: flex;
     justify-content: flex-start;
 }
 
-.nav{
+nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -196,12 +243,12 @@ table {
     border-radius: 15px;
   }
 
-  footer {
-    background: #1abc9c;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 14px;
+footer {
+  background: #1abc9c;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
 }
 
 #dropdown{
@@ -286,6 +333,7 @@ margin-top: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   background-color: #f9f9f9;
+  text-align: left;
 }
 
 .container-pontos{
