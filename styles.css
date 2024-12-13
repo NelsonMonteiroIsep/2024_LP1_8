@@ -279,7 +279,10 @@ section p{
   padding-bottom: 15px;
 }
 .textoReview{
-style="font-style: italic"
-}
 
+text-align: center;
+}
+.reviewEstrelas{
+  text-align: center;
+}
 
