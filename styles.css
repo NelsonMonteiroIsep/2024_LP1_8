@@ -3,11 +3,20 @@
     box-sizing: border-box;
 }
 
+html{
+  margin: 0; padding: 0; width: 100%;
+  height: 100%;
+  overflow-x: hidden !important;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+    width: 100%;
+    overflow-x: hidden !important;
 }
+
 
 .container {
     width: 90%;
@@ -15,22 +24,20 @@ body {
     margin: 0 auto;
 }
 
+
 #subtitulo {
   text-align: center;
 }
 
 
 .header {
-    background: #1abc9c;
-    color: #fff;
-    padding: 20px 0;
-    /*
-    position: fixed; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #1abc9c;
+  color: #fff;
+  padding: 20px 0;
+  min-width: 100%;
 }
 
 .header .logo {
@@ -40,14 +47,16 @@ body {
     justify-content: flex-start;
 }
 .menu{
-    display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .menudir {
-    display: flex; /* Ensure items align in a row */
-    gap: 10px; /* Optional: space between right items */
+    display: flex;
+    gap: 10px; 
+    margin: 20px;
 }
 
 .menu ul{
@@ -83,22 +92,7 @@ body {
   
   }
 
-  #bannerimage {
-  width: 100%;
-  background-image:url("C:/Users/35191/Desktop/LP1/imagens/aliexpress-banner.png");
-  height:100px;
-  background-position:center;
-}
-
 .container p {text-align: justify;}
-
-.btn {
-    padding: 10px 20px;
-    background: #1abc9c;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
 
 .about {
     padding: 50px 20px;
@@ -176,10 +170,6 @@ table {
     font-size: 14px;
 }
 
-#dropdown{
-height: auto;
-}
-
 .about-ali{
 
   display: flex;
@@ -192,6 +182,8 @@ height: auto;
 .about-image {
   flex: 0 0 400px;
   text-align: center;
+  max-width: 100%;
+  height: auto;
 }
 
 .about-image img {
@@ -211,7 +203,7 @@ margin-right: 20px;
 }
 
 .about-cont{
-  display: flex;
+    display: flex;
     align-items: center; 
     justify-content: space-between; 
     flex-wrap: wrap; 
@@ -230,6 +222,7 @@ margin-right: 20px;
 
 .tabela {
   flex :2;
+  overflow-x:auto;
 }
 
 .tabela table {
@@ -246,10 +239,6 @@ padding: 20px;
 border-radius: 8px;
 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 margin-top: 20px;
-}
-
-.texto p{
-  text-align: justify;
 }
 
 .pontos {
@@ -271,18 +260,127 @@ margin-top: 20px;
   list-style-type: disc;
             padding-left: 20px;
 }
-section p{
-  padding-bottom: 20px;
-}
-.sublinhado{
+.sublinhado{  /* SUBLINHado dos titulos*/
   text-decoration: underline;
-  padding-bottom: 15px;
+  padding-bottom:10px;
 }
-.textoReview{
 
-text-align: center;
+@media (max-width: 500px) {
+  
+  .header {
+    flex-direction: column; 
+    text-align: center;
+  }
+
+  .markets {
+    flex-direction: column; 
+    align-items: center;   
+    gap: 20px;            
+  }
+  .market {
+    width: 100%;        
+  }
+
+  .menu {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px; 
+  }
+
+ 
+  h2 {
+    font-size: 1.2em; 
+  }
+
+  p {
+    font-size: 0.9em; 
+  }
+
+  
+  .about-ali {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image,
+  .about-text {
+    margin: 10px 0;
+  }
+
+ 
+  .container-pontos {
+    flex-direction: column;
+    gap: 20px; 
+  }
+
+  .pontos {
+    width: 100%;
+  }
+
+
+  .tabela {
+    width: 100%; 
+  }
+
+  .tabela table {
+    font-size: 0.8em; 
+  }
+
+  .tabela-texto {
+    flex-direction: column; 
+    gap: 20px; 
+
+  
 }
-.reviewEstrelas{
-  text-align: center;
+}
+
+@media (max-width: 210px) {
+ 
+  .header {
+    font-size: 0.8em; 
+    padding: 5px; 
+
+  .menu ul {
+    gap: 5px; 
+  }
+
+ 
+  h2 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 0.7em; 
+  }
+
+  
+  .about-ali {
+    gap: 10px; 
+  }
+
+  
+  .tabela-texto {
+    gap: 10px; 
+  }
+
+  .tabela {
+    font-size: 0.7em; 
+  }
+
+  
+  .container-pontos {
+    gap: 5px; 
+  }
+
+  .pontos {
+    font-size: 0.6em;
+    width: 100%;
+    padding: 5px; 
+  }
+}
 }
 
